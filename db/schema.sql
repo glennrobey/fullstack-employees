@@ -1,3 +1,8 @@
 DROP TABLE IF EXISTS employees;
 
-
+CREATE TABLE employees (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  birthday DATE NOT NULL,
+  salary NUMERIC(10, 2) NOT NULL
+);
