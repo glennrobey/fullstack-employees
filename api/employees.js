@@ -1,5 +1,8 @@
 import express from "express";
-const router = express.Router();
-export default router;
+import employeesRouter from "../routes/employees.js";
 
-// TODO: this file!
+const router = express.Router();
+
+router.use("/", employeesRouter);
+
+export default router;
